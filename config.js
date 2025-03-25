@@ -26,14 +26,13 @@ export const config = {
         }
     },
     
-    // Binance API Configuration
-    apiKey: '',  // Add your Binance API key here
-    apiSecret: '', // Add your Binance API secret here
+    // Trading Execution Mode
+    tradingMode: 'real', // 'real' for live trading, 'simulated' for demo
     
     // Trading Parameters
     defaultTradingPair: 'BTCUSDT',
     availablePairs: ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'ADAUSDT', 'DOGEUSDT'],
-    defaultLeverage: 1,
+    defaultLeverage: 5, // Added leverage for futures trading
     
     // Risk Management
     maxTradesPerDay: 10,
@@ -61,7 +60,5 @@ export const config = {
         'BNBUSDT': 2,
         'ADAUSDT': 4,
         'DOGEUSDT': 5
-    },
-    // Trading mode: 'real' or 'simulated'
-    tradingMode: 'simulated'
+    }
 };
